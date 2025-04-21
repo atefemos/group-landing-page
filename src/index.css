@@ -33,6 +33,11 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 input[type="email"] {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 500;
@@ -69,7 +74,7 @@ input[type="email"]:focus {
 }
 
 .btn {
-  @apply flex justify-center items-center gap-1 max-w-max text-white text-[1.2rem] font-medium border-0 px-4 py-3 rounded-[5px] cursor-pointer transition-all ease-in shadow-md;
+  @apply flex text-fluid justify-center items-center gap-1 max-w-max text-white text-[1.2rem] font-medium border-0 px-4 py-3 rounded-[5px] cursor-pointer transition-all ease-in shadow-md;
   background: linear-gradient(
     90deg,
     rgb(118, 167, 63) 0%,
@@ -90,9 +95,8 @@ input[type="email"]:focus {
 }
 
 .item {
-  max-width: 120px;
-  max-height: 120px;
   aspect-ratio: 1/1;
+  object-fit: cover;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5),
     inset 0px 2px 2px rgba(255, 255, 255, 0.2);
   animation: fadeIn 0.5s linear 1 forwards;
