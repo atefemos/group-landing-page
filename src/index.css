@@ -73,6 +73,15 @@ input[type="email"]:focus {
   }
 }
 
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
 .btn {
   @apply flex text-fluid justify-center items-center gap-1 max-w-max text-white text-[1.2rem] font-medium border-0 px-4 py-3 rounded-[5px] cursor-pointer transition-all ease-in shadow-md;
   background: linear-gradient(
@@ -163,4 +172,63 @@ input[type="email"]:focus {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
+}
+
+@layer components {
+  .content-glow::before,
+  .content-glow::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: conic-gradient(
+      from var(--gradient-angle),
+      rgb(109, 186, 22),
+      rgb(30, 119, 95),
+      rgb(55, 141, 167),
+      rgb(59, 91, 174),
+      rgb(144, 118, 236),
+      rgb(59, 91, 174),
+      rgb(55, 141, 167),
+      rgb(30, 119, 95),
+      rgb(109, 186, 22)
+    );
+    animation: rotation 8s linear infinite;
+  }
+
+  .content-glow::after {
+    filter: blur(30px);
+  }
+}
+
+li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #559b9a, #3b3d8a);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5),
+    inset 0px 4px 4px rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+li::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(to right, #559b9a, #3b3d8a);
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 0.5s ease-in;
+  opacity: 0;
+}
+
+li:hover::before {
+  opacity: 1;
 }

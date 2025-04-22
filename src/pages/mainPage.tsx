@@ -5,7 +5,7 @@ import Person3 from "../assets/images/person3.jpeg"
 import Person4 from "../assets/images/person4.webp"
 import Person5 from "../assets/images/person5.avif"
 import Person6 from "../assets/images/person6.jpg"
-import { IoArrowForwardOutline } from "react-icons/io5"
+import { IoArrowForwardOutline, IoArrowBackOutline } from "react-icons/io5"
 
 const MainPage: React.FC = () => {
   
@@ -81,6 +81,39 @@ const MainPage: React.FC = () => {
           <img className="item" src={Person6}
             alt="" />
       </div>
+      </section>
+      <section className="flex flex-col justify-center items-center gap-[20px] w-full min-h-screen overflow-hidden px-[50px] pt-[60px] pb-[20px] bg-[radial-gradient(circle,_rgba(67,69,112,1)_3%,_rgba(35,36,57,1)_60%)]" id="card-container">
+        <div className="slider">
+          <div className="max-w-[300px] aspect-[3/5] rounded-[15px] m-[20px] overflow-hidden 
+         border-t border-l border-white/70 
+         shadow-[0_8px_10px_rgba(0,0,0,0.5),_inset_0_2px_2px_rgba(255,255,255,0.2)] 
+         cursor-grab" data-tilt>
+          <div className="relative h-full grid grid-cols-1 grid-rows-[repeat(9,_1fr)] p-[20px] bg-[rgba(104,104,104,0.5)] select-none content-glow">
+            <img className="aspect-[3/2] rounded-[10px] row-[1/5] mb-[20px] select-none object-cover shadow-[0_3px_10px_rgba(0,0,0,0.5)]" src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/10088b1a-c0aa-42a9-8dff-1a692eb597d6" alt="" />
+            <h1 className="text-[1.2rem] text-white text-center row-[5/6]">Personalized Guidance</h1>
+            <p className="text-[1rem] font-normal text-white row-[6/9]">
+              Whether you are pursuing a career change, entrepreneurship, or
+              personal development, a mentor offers substantial advice and
+              support to navigate your unique path.
+            </p>
+            <button className="btn bg-gradient-to-r from-[#ece9e6] to-[#ece9e6] via-[#ffffff] 
+             p-[8px_12px] text-black shadow-[0_0_5px_#eee] outline-0 
+             text-[0.9rem] font-normal row-[9/10] m-[4px_auto_8px] cursor-pointer 
+             transition-all duration-500 ease-in">
+              <span>Learn More</span>
+              <IoArrowForwardOutline />
+            </button>
+          </div>
+        </div>
+        </div>
+        <ul className="flex flex-row justify-center items-center list-none gap-[14px]" id="custom-control">
+          <li>
+          <IoArrowBackOutline />
+        </li>
+        <li>
+        <IoArrowForwardOutline />   
+        </li>
+      </ul>
       </section>
     </div>
   )
