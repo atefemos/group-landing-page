@@ -2,6 +2,8 @@ First view:
 
 <img width="1140" alt="Screenshot 2025-04-21 at 20 58 05" src="https://github.com/user-attachments/assets/87b2d766-848f-4b75-aca9-40b1972b7632" />
 
+<img width="1502" alt="Screenshot 2025-04-23 at 19 56 34" src="https://github.com/user-attachments/assets/bfbcf1cd-5873-484c-b543-6ffdaefc3385" />
+
 
 # Getting Started with Create React App
 
