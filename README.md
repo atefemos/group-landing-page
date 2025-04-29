@@ -4,6 +4,10 @@ First view:
 
 <img width="1502" alt="Screenshot 2025-04-23 at 19 56 34" src="https://github.com/user-attachments/assets/bfbcf1cd-5873-484c-b543-6ffdaefc3385" />
 
+animation on mouse movement:
+
+![Uploading Screenshot 2025-04-29 at 13.35.20.png…]()
+
 
 # Getting Started with Create React App
 
