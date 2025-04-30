@@ -4,9 +4,10 @@ First view:
 
 <img width="1502" alt="Screenshot 2025-04-23 at 19 56 34" src="https://github.com/user-attachments/assets/bfbcf1cd-5873-484c-b543-6ffdaefc3385" />
 
-animation on mouse movement:
+Animation on mouse movement:
 
-![Uploading Screenshot 2025-04-29 at 13.35.20.png…]()
+<img width="1179" alt="Screenshot 2025-04-29 at 13 35 20" src="https://github.com/user-attachments/assets/2ab9d298-dc96-42b0-9a4b-417ab2d9f64e" />
+
 
 
 # Getting Started with Create React App
@@ -19,7 +20,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
